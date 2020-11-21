@@ -1,0 +1,111 @@
+.app {
+  width: 100vw;
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 100vw !important;
+  }
+  .chatbox {
+    display: none !important;
+  }
+
+}
+.sidebar {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid lightgrey;
+
+    .sidebar-header {
+      background: #ededed;
+      height: 10%;
+    }
+
+    .sidebar-search {
+      background-color: #f6f6f6;
+      box-sizing: border-box;
+      height: 8%;
+      padding: 6rem 0rem;
+
+      .search-input {
+        margin-left: 5%;
+        border: none;
+        padding: 10rem;
+        width: 90%;
+        border-radius: 20rem;
+      }
+    }
+
+    .sidebar-chatlist {
+      overflow: auto;
+      height: 82%;
+      scrollbar-width: thin;
+
+      .chat-contact {
+        display: flex;
+        cursor: pointer;
+        background: white;
+        height: 15vh;
+        border-bottom: solid 1px #f2f2f2;
+        padding: 10rem;
+
+        &.selected {
+          background-color: lightgrey;
+        }
+
+        .display-pic {
+          width: 10%;
+        }
+
+        .chat-contact-info {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+
+          .contact-name {
+            font-weight: bold;
+            font-size: 20rem;
+          }
+          .chat-message {
+            font-size: 15rem;
+          }
+        }
+      }
+    }
+}
+
+.chatbox {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+
+    .chatbox-header {
+      background: #ededed;
+      height: 10%;
+    }
+
+    .chatbox-area {
+      height: 80%;
+    }
+
+    .chatbox-footer {
+      height: 10%;
+      background: #ededed;
+      padding: 10rem 0rem;
+
+      .chat-input {
+        height: 100%;
+        border: none;
+        width: 85%;
+        margin-left: 10%;
+        margin-right: 5%;
+        border-radius: 20rem;
+        padding: 10rem 20rem;
+      }
+
+    }
+}
