@@ -1,7 +1,7 @@
 # Whatsapp Web Clone
     A React based whatsapp web clone.
 ## Getting Started
-![Screenshot](screenshot.jpg)
+![plot](screenshot.jpg)
 
 ### Dependencies
 * ReactJS.
