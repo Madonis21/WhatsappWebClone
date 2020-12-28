@@ -1,15 +1,27 @@
 import React from 'react'
+import ContactCard from './ContactCard';
 
-function ChatContact({contactName, lastMessage, selected}) {
+function ChatContact({id, contactName, lastMessage, selected, hovered, displayPic, setEvent}) {
+
     return (
-        <div className={selected ? 'chat-contact selected ': 'chat-contact'}>
-            <img className="display-pic" alt="pic"></img>
-            <div className="chat-contact-info">
-                <div className="contact-name">{contactName}</div>
-                <div className="chat-message">{lastMessage}</div>
-            </div>            
-        </div>
-    )
+      <div
+        key={id}
+        onClick={() => setEvent(id, 'selected')}
+        onMouseEnter={() => setEvent(id, 'hovered')}
+        className={ selected ? 'selected chat-contact' : 
+                    hovered ? 'hovered chat-contact' :
+                    'chat-contact'}
+      >
+
+        <ContactCard
+            displayPic={displayPic}
+            contactName ={contactName}
+            lastMessage={lastMessage}
+            showLastMessage={true}
+        ></ContactCard>
+        
+      </div>
+    );
 }
 
 export default ChatContact
