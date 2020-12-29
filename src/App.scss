@@ -22,13 +22,13 @@
 
     .sidebar-header {
       background: #ededed;
-      height: 10%;
+      height: 60px;
     }
 
     .sidebar-search {
       background-color: #f6f6f6;
       box-sizing: border-box;
-      height: 8%;
+      height: 50px;
       padding: 6rem 0rem;
 
       .search-input {
@@ -42,14 +42,14 @@
 
     .sidebar-chatlist {
       overflow: auto;
-      height: 82%;
+      height: calc(100vh - 110px);
       scrollbar-width: thin;
 
       .chat-contact {
         display: flex;
         cursor: pointer;
         background: white;
-        height: 15vh;
+        height: auto;
         border-bottom: solid 1px #f2f2f2;
         padding: 20rem 10rem;
 
@@ -71,17 +71,18 @@
 
     .chatbox-header {
       background: #ededed;
-      height: 10%;
+      height: 60px;
       padding: 10rem 20rem;
       display: flex;
     }
 
     .chatbox-area {
-      height: 80%;
+      height: calc(100vh - 120px);
+      overflow: auto;
     }
 
     .chatbox-footer {
-      height: 10%;
+      height: 60px;
       background: #ededed;
       padding: 10rem 0rem;
 
@@ -122,7 +123,7 @@
   cursor: pointer;
   
   &.circular-wrap {
-    width: 11%;
+    width: 45px;
     background: white;
     border-radius: 50%;
     height: 45px;
@@ -136,6 +137,7 @@
       background-origin: content-box;
       background-repeat: no-repeat;
     }
+
   }
 }
 
