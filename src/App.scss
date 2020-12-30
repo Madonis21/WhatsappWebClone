@@ -163,18 +163,29 @@
   
   &.circular-wrap {
     width: 45px;
-    background: white;
+    background: #ededed;
     border-radius: 50%;
     height: 45px;
 
     .display-pic {
       height: -webkit-fill-available;
       height: -moz-fill-available;
-      padding: 5px;
+      padding: 8%;
       background-position: center;
       background-size: contain;
       background-origin: content-box;
       background-repeat: no-repeat;
+    }
+
+    .avataar {
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+    }
+
+    &.full-display-pic {
+      width: 200px;
+      height: 200px;
     }
 
   }
@@ -194,5 +205,35 @@
 
   .chat-message {
     font-size: 16px;
+  }
+}
+
+.contact-info {
+  height: 100vh;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid lightgrey;
+  background: #ededed;
+
+  .contactinfo-header {
+    background: #ededed;
+    height: 60px;
+    padding: 10rem 20rem;
+    display: flex;
+  }
+
+  .contact-info-section {
+    animation: _1L54Y 1s cubic-bezier(.1,.82,.25,1);
+    padding: 28px 30px 19px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+
+  .contact-pic-holder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 }
