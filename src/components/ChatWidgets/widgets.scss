@@ -44,6 +44,7 @@
     width: 80%;
     margin-left: 15%;
     margin-bottom: 20px;
+    margin-top: 20px;
     padding: 10px;
     position: relative;
     border-radius: 5px;
@@ -65,10 +66,33 @@
 }
 
 .chat-image {
-    width: 60%;
     position: relative;
-    padding: 150px;
+    width: 75%;
     height: 300px;
-    margin-left: 35%;
+    margin-left: 20%;
     box-shadow: 0px 0px 0px 10px #dcf8c6 inset;
-}
+
+        .timestamp {
+            font-size: x-small;
+            position: absolute;
+            bottom: 0px;
+            right: 10px;
+            color: #afc69e;
+        }
+    }
+
+    .drawn-img {
+        width: 100%;
+        position: relative;
+        height: 300px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .send-btn {
+        svg {
+        font-size: 30rem;
+        cursor: pointer;
+        margin: 5px 10px;
+        }
+    }
