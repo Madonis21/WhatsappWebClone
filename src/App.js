@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.scss';
 import Chatbox from './components/Chatbox';
+import ContactInfo from './components/ContactInfo';
 import Sidebar from './components/Sidebar';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <div className="app">
         <Sidebar openChatDetail={openChatDetail}></Sidebar>
         <Chatbox currentUser={currentUser}></Chatbox>
+        <ContactInfo currentUser={currentUser}></ContactInfo>
     </div>
   );
 }
