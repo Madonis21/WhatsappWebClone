@@ -15,5 +15,6 @@ npm run install
 ```
 npm run start
 ```
-## Authors
-Mohit Sharma
+## Contributors
+#### Mohit Sharma
+#### Akhil Mishra
